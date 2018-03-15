@@ -6,9 +6,10 @@ const
     bodyParser = require('body-parser'),
     axios = require('axios'),
     httpClient = axios.create(),
+    apiKey = process.env.API_KEY,
     PORT = 3000
     
-const apiKey = process.env.apiKey
+ 
 
 app.use(logger('dev'))
 app.use(bodyParser.json())
