@@ -9,8 +9,6 @@ const
     apiKey = process.env.API_KEY,
     PORT = 3000
     
- 
-
 app.use(logger('dev'))
 app.use(bodyParser.json())
 app.use(express.static(`${__dirname}/public`))
