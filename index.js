@@ -7,12 +7,8 @@ const
     axios = require('axios'),
     httpClient = axios.create(),
     PORT = 3000
-<<<<<<< HEAD
-
-const apiKey = process.env.API_KEY
-=======
     
-const apiKey = process.env.apiKey
+const apiKey = process.env.API_KEY
 
 app.use(logger('dev'))
 app.use(bodyParser.json())
@@ -25,4 +21,3 @@ app.get('/', (req, res) => {
 app.listen(PORT, (err)=> {
     console.log(err || `Server running on ${PORT}`)
 })
->>>>>>> d716f7c24286847c2dd03fa98cac3d89c1e521fa
